@@ -1,0 +1,40 @@
+{
+	"folders": [
+		{
+			"path": "JS Basics"
+		},
+		{
+			"path": "Control Statements"
+		},
+		{
+			"path": "Loops"
+		},
+		{
+			"path": "Arrays"
+		},
+		{
+			"path": "Functions"
+		},
+		{
+			"path": "Classes"
+		},
+		{
+			"path": "HTML Files"
+		},
+		{
+			"path": "Strings"
+		},
+		{
+			"path": "Patterns"
+		},
+		{
+			"path": "Series"
+		},
+		{
+			"path": "Exceptions"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HTML Files"
+	}
+}
