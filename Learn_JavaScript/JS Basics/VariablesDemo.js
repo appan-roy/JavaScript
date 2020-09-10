@@ -13,6 +13,10 @@ console.log(y)
 z = 30
 console.log(z)
 
+//fourth way of declaring a variable
+const p = 40
+console.log(p)
+
 //string variable with single quote
 let firstName = 'Appan'
 console.log("First Name : "+firstName)
