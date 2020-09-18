@@ -1,0 +1,48 @@
+<html>
+    <head>Digital Clock</head>
+    <body>
+        <h1 id='dc'></h1 id='dc'>
+    </body>
+    <script>
+        function showTime(){
+            
+            //create a date object
+            let date = new Date()
+            
+            //get hr, min, sec from the date object
+            let hr = date.getHours()
+            let min = date.getMinutes()
+            let sec = date.getSeconds()
+            
+            //initialize session variable
+            let session = 'AM'
+
+            //if hr is 0 then show 12
+            if(hr == 0){
+                hr == 12
+            }
+            
+            //12-hr clock formatting with session
+            if(hr > 12){
+                hr -= 12
+                session = 'PM'
+            }
+
+            //formatting with 0 as prefix for single digit hr, min, sec
+            hr = (hr < 10) ? '0'+hr : hr
+            min = (min < 10) ? '0'+min : min
+            sec = (sec < 10) ? '0'+sec : sec
+
+            //construct complete time
+            let time = hr + ":" + min + ":" + sec + '\t' + session
+
+            //set time in DOM
+            document.getElementById('dc').innerHTML = time
+
+            //set timeout for 1 sec
+            setTimeout(showTime, 1000)
+            
+        }
+        showTime()
+    </script>
+</html>
