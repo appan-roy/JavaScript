@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script>
+        function myData() {
+            num = document.getElementById("txtNumber").value;
+            if (isNaN(num))
+                alert("Only numbers are allowed")
+            else {
+                if (num % 2 == 0)
+                    result = "Even Number"
+                else
+                    result = "Odd Number"
+            }
+            document.getElementById("txtResult").value = result
+        }
+    </script>
+</head>
+
+<body>
+    Enter a number:
+    <input type="text" id="txtNumber"><br><br>
+    <input type="button" id="btnGo" onclick="myData()" value="Go"><br><br>
+    Result:
+    <input type="text" id="txtResult">
+</body>
+
+</html>
